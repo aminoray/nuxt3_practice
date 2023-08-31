@@ -1,0 +1,72 @@
+.app-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  &.full {
+    width: 100%;
+  }
+
+  &.half {
+    width: 50%;
+  }
+
+  &.quarter {
+    width: 25%;
+  }
+
+  &.third {
+    width: 33.3333%;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  > .top > .label {
+    margin-bottom: 7px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 135%;
+    color: $black;
+
+    .required {
+      color: $red;
+    }
+  }
+
+  > .field {
+    width: 100%;
+  }
+
+  > .field > .input {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.6rem;
+    background: $white;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    color: $black;
+
+    &::placeholder {
+      color: $light-gray;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    &.-error {
+      border-color: $red;
+    }
+
+    &:focus {
+      outline: solid 1px $main-color;
+    }
+  }
+
+  > .error {
+    margin: 6px 0;
+    font-size: 1.2rem;
+    color: $red;
+    word-break: break-all;
+  }
+}

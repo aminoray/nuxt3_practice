@@ -1,0 +1,29 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $white !important;
+
+  &.-transparent {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  > .loader {
+    text-align: center;
+  }
+
+  > .loader > .sk-chase {
+    margin-bottom: 24px;
+  }
+
+  > .loader > .text {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}

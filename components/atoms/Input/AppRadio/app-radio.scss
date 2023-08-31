@@ -1,0 +1,102 @@
+.app-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  > .top > .label {
+    margin-bottom: 7px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 135%;
+    color: $black;
+
+    .required {
+      color: $red;
+    }
+  }
+  > .field {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+  }
+
+  > .field > .radio-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0;
+
+    &::before,
+    &::after {
+      border-radius: 50%;
+      content: '';
+    }
+
+    &::before {
+      width: 26px;
+      height: 26px;
+      border: 2px solid $light-gray;
+      box-sizing: border-box;
+    }
+
+    &::after {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      transform: translate(-50%, -50%);
+      width: 15px;
+      height: 15px;
+      background-color: $white;
+    }
+
+    &:has(:checked)::after {
+      background-color: $main-color;
+      animation: radio 0.3s linear;
+    }
+
+    @keyframes radio {
+      0% {
+        box-shadow: 0 0 0 1px transparent;
+      }
+      50% {
+        box-shadow: 0 0 0 10px #2589d033;
+      }
+      100% {
+        box-shadow: 0 0 0 10px transparent;
+      }
+    }
+  }
+
+  > .field > .radio-label input {
+    display: none;
+  }
+
+  > .field > .radio-label > .detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc(100% - 40px);
+  }
+
+  > .field > .radio-label > .detail > .name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 135%;
+    color: $black;
+    margin: 0 10px;
+    width: 120px;
+  }
+
+  > .field > .radio-label > .detail > .description {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 135%;
+    color: $text-gray;
+    cursor: default;
+    max-width: calc(100% - 140px);
+  }
+}

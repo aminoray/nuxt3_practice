@@ -1,0 +1,46 @@
+.rectangle-button {
+  width: auto;
+  padding: 8px 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.35;
+  color: $white;
+  background-color: $main-color;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+
+  &.-disabled {
+    background-color: $light-gray;
+    cursor: default;
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: lighten($light-gray, 8%);
+    }
+  }
+
+  &.fixed {
+    padding: 8px 0;
+    width: 200px;
+  }
+
+  &.fill-container {
+    width: 100%;
+  }
+
+  &.sub-color {
+    background-color: $sub-color;
+  }
+
+  &.gray {
+    background-color: $text-gray;
+  }
+}

@@ -1,0 +1,41 @@
+.menu-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  .icon {
+    margin-right: 10px;
+    height: 22px;
+    width: 22px;
+  }
+
+  &.main-color {
+    color: $main-color;
+
+    &:hover {
+      background-color: $main-color-10;
+    }
+  }
+
+  &.sub-color {
+    color: $sub-color;
+    &:hover {
+      background-color: $sub-color-10;
+    }
+  }
+
+  &.black {
+    color: $black;
+    &:hover {
+      background-color: $black-10;
+    }
+  }
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+  }
+}

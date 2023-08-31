@@ -1,0 +1,32 @@
+.common-menu {
+  > .layer {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $modal-bg;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+  }
+
+  &.active > .layer {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  > .layer > .menu {
+    background-color: $white;
+    width: 280px;
+    margin-left: auto;
+    margin-right: 0;
+    transform: translateX(30px);
+    transition: all 0.1s linear;
+  }
+
+  &.active > .layer > .menu {
+    transform: translateX(0);
+  }
+}

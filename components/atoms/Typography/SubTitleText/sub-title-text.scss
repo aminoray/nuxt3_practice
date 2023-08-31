@@ -1,0 +1,22 @@
+#sub-title-text {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 135%;
+  color: $text-gray;
+
+  &.large {
+    font-size: 2rem;
+  }
+
+  &.small {
+    font-size: 1.6rem;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  &.sub-color {
+    color: $sub-color;
+  }
+}

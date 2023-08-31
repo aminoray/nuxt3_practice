@@ -1,0 +1,22 @@
+#description-text {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 135%;
+  color: $text-gray;
+
+  &.large {
+    font-size: 1.8rem;
+  }
+
+  &.small {
+    font-size: 1.4rem;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  &.sub-color {
+    color: $sub-color;
+  }
+}
