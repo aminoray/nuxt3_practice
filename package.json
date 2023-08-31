@@ -6,7 +6,8 @@
     "dev": "PORT=3030 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "hygen": "hygen component new"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

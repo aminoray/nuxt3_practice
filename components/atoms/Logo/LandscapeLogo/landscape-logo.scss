@@ -1,9 +1,22 @@
 .landscape-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   .img {
     height: 36px;
     width: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  .font {
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    background: $gradation-green;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

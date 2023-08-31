@@ -1,21 +1,27 @@
 // Default
-$black: #222222;
+$black: #262626;
 $white: #ffffff;
 $navy: #001f3f;
 $text-gray: #b8b8b8;
 $light-gray: #cccccc;
-$main-color: #F2334B;
-$sub-color: #CE3462;
+$main-color: #5fc081;
+$sub-color: #2790a6;
 $main-color-10: rgba(200, 92, 42, 0.1);
 $sub-color-10: rgba(0, 188, 130, 0.1);
 $white-10: rgba(255, 255, 255, 0.1);
 $black-10: rgba(0, 0, 0, 0.1);
+$gradation-green: linear-gradient(
+  96deg,
+  #2790a6 3.37%,
+  #3fa080 43.63%,
+  #5fc081 100%
+);
 
 // colors
 $blue: #4088f2;
 $red: #f0143e;
-$green: #F5B640;
-$yellow: #F5B640;
+$green: #f5b640;
+$yellow: #f5b640;
 $orange: #ff7a00;
 
 // Background

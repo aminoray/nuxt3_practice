@@ -8,5 +8,6 @@ import '~/components/atoms/Logo/LandscapeLogo/landscape-logo.scss';
       src="https://nuxt.com/assets/design-kit/logo/icon-green.png"
       alt="site logo"
     />
+    <p class="font">Nuxt3 practice</p>
   </div>
 </template>

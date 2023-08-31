@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import '~/assets/scss/layouts/default-container.scss';
 import DefaultHeader from '~/components/molecules/Header/DefaultHeader/DefaultHeader.vue';
-
+import DefaultFooter from '~/components/molecules/Footer/DefaultFooter/DefaultFooter.vue';
 </script>
 
 <template>
@@ -10,5 +10,6 @@ import DefaultHeader from '~/components/molecules/Header/DefaultHeader/DefaultHe
     <main class="main">
       <slot />
     </main>
+    <DefaultFooter />
   </div>
 </template>

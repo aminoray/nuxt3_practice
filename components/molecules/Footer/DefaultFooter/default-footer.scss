@@ -1,0 +1,15 @@
+.default-footer {
+  min-height: 200px;
+  background-color: $navy;
+  position: relative;
+
+  > .copy-write {
+    position: absolute;
+    color: $white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+  }
+}
