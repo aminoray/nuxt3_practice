@@ -1,63 +1,45 @@
-# Nuxt 3 Minimal Starter
+# はじめに
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+このリポジトリは、フロントエンドの学習用のリポジトリになります！
+まずはこのリポジトリをクローンして、自分の手元の環境で、立ち上げてみましょう！
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### 具体的な手順
 
 ```bash
-# npm
-npm run dev
+# 適切なディレクトリに移動する
+# git cloneする
+$ git clone git@github.com:aminoray/nuxt3_practice.git
 
-# pnpm
-pnpm run dev
+# install
+$ npm install
 
-# yarn
-yarn dev
+# local server
+$ npm run dev
 ```
 
-## Production
+localhost は、3030 番ポートを指定しているので、localhost:3030 にアクセスします。
 
-Build the application for production:
+# Version
+
+| name | version |
+| ---- | ------- |
+| Node | 18.9.0  |
+| Nuxt | 3.7.0   |
+
+# Setup
 
 ```bash
-# npm
-npm run build
+# install
+$ npm install
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
+# local server
+$ npm run dev
 ```
 
-Locally preview production build:
+# コンポーネント作成
+
+※使っても使わなくてもいいですが、scss ファイルも一緒に生成できます。
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
+$ npm run hygen
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
