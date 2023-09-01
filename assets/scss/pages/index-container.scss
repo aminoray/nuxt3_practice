@@ -1,7 +1,7 @@
 // このファイルは、pages/index.vueのスタイルを記載するページになっています。
 .index-container {
   > .top-content {
-    background-image: url('@/assets/images/bacground-images/bg-002.png');
+    background-image: url('@/assets/images/background-images/bg-002.png');
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,6 +32,7 @@
 
   > .content {
     padding: 50px;
+    // background-image: url('@/assets/images/background-images/Illusion-002.png');
   }
 
   > .content > .title-gradation {
@@ -47,6 +48,7 @@
     border-radius: 10px;
     background-color: $white;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    background-image: url('@/assets/images/background-images/Illusion-002.png');
 
     .ul {
       margin: 10px 0;
@@ -74,8 +76,4 @@
   .m-20 {
     margin: 20px;
   }
-}
-
-main {
-  padding: 0 !important;
 }

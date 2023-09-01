@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 <template>
   <li class="menu-button" :class="props.color">
-    <img class="icon" :src="assetImage(props.icon)" :alt="props.text" />
+    <!-- <img class="icon" :src="assetImage(props.icon)" :alt="props.text" /> -->
     {{ props.text }}
   </li>
 </template>

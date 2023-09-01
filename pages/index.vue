@@ -9,7 +9,7 @@ import SubTitleText from '~/components/atoms/Typography/SubTitleText/SubTitleTex
     <div class="top-content">
       <img
         class="pattern"
-        src="~/assets/images/bacground-images/pattern.png"
+        src="~/assets/images/background-images/pattern.png"
         alt=""
       />
       <h1 class="big-title">
@@ -40,6 +40,14 @@ import SubTitleText from '~/components/atoms/Typography/SubTitleText/SubTitleTex
           <li class="li">atomicデザイン</li>
           <li class="li">デザインシステム</li>
           <li class="li">コンポーネント（components）</li>
+          <li class="li">準備中...</li>
+          <li class="li">準備中...</li>
+          <li class="li">準備中...</li>
+          <li class="li">準備中...</li>
+          <li class="li">準備中...</li>
+          <li class="li">準備中...</li>
+          <li class="li">準備中...</li>
+          <li class="li">準備中...</li>
         </ul>
       </section>
     </div>
