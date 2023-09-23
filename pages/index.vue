@@ -3,6 +3,7 @@ import '~/assets/scss/pages/index-container.scss';
 import TitleText from '~/components/atoms/Typography/TitleText/TitleText.vue';
 import DescriptionText from '~/components/atoms/Typography/DescriptionText/DescriptionText.vue';
 import SubTitleText from '~/components/atoms/Typography/SubTitleText/SubTitleText.vue';
+import AppLink from '~/components/atoms/Link/AppLink/AppLink.vue';
 </script>
 <template>
   <div class="index-container">
@@ -36,6 +37,12 @@ import SubTitleText from '~/components/atoms/Typography/SubTitleText/SubTitleTex
           color="sub-color"
           class="m-b-10"
         />
+        <AppLink
+          href="https://qiita.com/citrus_candy/items/74d602f672ccfc93490e"
+          target="_blank"
+        >
+          <p class="link">Atomicデザインとは？？</p>
+        </AppLink>
         <ul class="ul">
           <li class="li">atomicデザイン</li>
           <li class="li">デザインシステム</li>

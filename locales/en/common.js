@@ -1,0 +1,18 @@
+export default {
+  login: 'SignIn',
+  signup: 'SignUp',
+  passwordReset: 'Password Reset',
+  loading: 'Loading...',
+  send: 'Send',
+  save: 'Save',
+  previous: 'Previous',
+  next: 'Next',
+  termsOfService: 'Terms of Service',
+  privacyPolicy: 'Privacy Policy',
+  and: 'and',
+  approve: 'I agree to the',
+  send: 'Send',
+  cancel: 'Cancel',
+  applying: 'Applying',
+  regist: 'Regist',
+};

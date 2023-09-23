@@ -12,10 +12,11 @@ type Props = {
   disabled?: boolean;
   publishSetting: 'public' | 'private' | null;
   rules: string | null;
+  options: Array<{ value: string; label: string }>;
 };
 const props = withDefaults(defineProps<Props>(), {
   inputName: '',
-  setValue: '',
+  setValue: undefined,
   label: '',
   rules: null,
   placeholder: '',
@@ -23,9 +24,10 @@ const props = withDefaults(defineProps<Props>(), {
   required: false,
   disabled: false,
   publishSetting: null,
+  options: Array,
 });
 const emits = defineEmits(['update']);
-const selectedValue = ref<string>(props.setValue);
+const selectedValue = ref<string | number>(props.setValue);
 watch(props, (newVal) => {
   selectedValue.value = newVal.setValue;
 });
@@ -37,17 +39,11 @@ const selectFunc = (e: Event) => {
   selectedValue.value = e.target.value;
   emits('update', selectedValue.value);
 };
-
-const options = ref([
-  { value: 'apple', label: 'Apple' },
-  { value: 'banana', label: 'Banana' },
-  { value: 'cherry', label: 'Cherry' },
-]);
 </script>
 <template>
   <div class="app-select" :class="[size]">
     <div class="top">
-      <label :for="selectName" class="label">
+      <label :for="inputName" class="label">
         {{ label }}
         <span v-if="required" class="required">*</span>
         <span v-if="publishSetting === 'public'">（公開）</span>
@@ -56,16 +52,16 @@ const options = ref([
     </div>
     <Field
       v-slot="{ handleChange, errorMessage }"
-      :name="selectName"
-      :rules="rules"
+      :name="inputName"
+      :rules="rules ? rules : ''"
       class="field"
       as="div"
       validate-on-input
     >
       <select
-        :id="selectName"
+        :id="inputName"
         v-model="selectedValue"
-        :name="selectName"
+        :name="inputName"
         class="select"
         :disabled="disabled"
         :required="required"
@@ -78,7 +74,7 @@ const options = ref([
         </option>
         <option
           v-for="option in options"
-          :key="option.value"
+          :key="option.value!"
           :value="option.value"
           class="option"
         >
@@ -86,6 +82,6 @@ const options = ref([
         </option>
       </select>
     </Field>
-    <ErrorMessage :name="selectName" class="error" as="span" />
+    <ErrorMessage :name="inputName" class="error" as="span" />
   </div>
 </template>

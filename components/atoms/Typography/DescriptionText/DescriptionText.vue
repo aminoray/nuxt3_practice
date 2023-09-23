@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import '~/components/atoms/Typography/DescriptionText/description-text.scss';
-import { ButtonAndTextColor, Width } from '~/types/props-types';
+import { ButtonAndTextColor, Size } from '~/types/props-types';
 
 type Props = {
   text: string;
-  size?: Width;
+  size?: Size;
   color?: ButtonAndTextColor;
 };
 withDefaults(defineProps<Props>(), {

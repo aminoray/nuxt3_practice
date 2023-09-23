@@ -1,0 +1,32 @@
+[
+  {
+    "text": "ユーザー情報編集",
+    "icon": "icons/header-menu/setting.svg",
+    "color": "black",
+    "url": "/settings"
+  },
+  {
+    "text": "メールアドレス変更",
+    "icon": "icons/header-menu/mail.svg",
+    "color": "black",
+    "url": "/settings/email-reset"
+  },
+  {
+    "text": "パスワード変更",
+    "icon": "icons/header-menu/lock.svg",
+    "color": "black",
+    "url": "/settings/password-reset"
+  },
+  {
+    "text": "各種通知設定",
+    "icon": "icons/header-menu/bell.svg",
+    "color": "black",
+    "url": "/settings/notification"
+  },
+  {
+    "text": "ログアウト",
+    "icon": "icons/header-menu/logout.svg",
+    "color": "black",
+    "url": "/logout"
+  }
+]

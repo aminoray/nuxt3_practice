@@ -1,0 +1,115 @@
+.image-file-upload {
+  width: 363px;
+  position: relative;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  > .top {
+    text-align: left;
+  }
+
+  > .top > .label {
+    margin-bottom: 7px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: $black;
+
+    .required {
+      color: $red;
+    }
+  }
+
+  > .field .content {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  > .field .file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 88px;
+    height: 88px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  > .field > .content > .options {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  > .field > .content > .options > .delete {
+    width: 28px;
+    cursor: pointer;
+  }
+
+  > .field > .content > .file > .icon {
+    width: 40px;
+    height: auto;
+  }
+
+  > .field > .content > .file > .current {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  > .field > .content > .file > .edit {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > .field > .content > .file > .edit > .icon {
+    width: 26px;
+  }
+
+  > .field > .content > .file > .edit > .text {
+    font-size: 1.2rem;
+    color: $light-gray;
+  }
+
+  > .field input[type='file'] {
+    display: none;
+  }
+
+  > .field > .input {
+    &.-error {
+      border-color: $red;
+    }
+  }
+
+  .preview {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    margin-right: 10px;
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  > .error {
+    margin: 6px 0;
+    font-size: 1.2rem;
+    color: $red;
+    word-break: break-all;
+  }
+}

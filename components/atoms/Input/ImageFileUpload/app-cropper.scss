@@ -1,0 +1,52 @@
+.cropper-mask {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 600px;
+    height: 600px;
+    background-color: #000;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include respond(phone) {
+      width: 90%;
+      height: 60vh;
+    }
+
+    .option {
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      padding: 10px;
+      position: absolute;
+      top: -45px;
+      width: 100%;
+      z-index: 10;
+
+      .button {
+        cursor: pointer;
+      }
+      .button:hover {
+        transition: all 0.5s;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .vue-advanced-cropper,
+  .vue-advanced-cropper__background,
+  .vue-advanced-cropper__foreground {
+    border-radius: 10px;
+  }
+}

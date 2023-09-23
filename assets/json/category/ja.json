@@ -1,0 +1,18 @@
+[
+  {
+    "value": "sports",
+    "label": "スポーツ"
+  },
+  {
+    "value": "music",
+    "label": "音楽"
+  },
+  {
+    "value": "entertainment",
+    "label": "芸能"
+  },
+  {
+    "value": "economy",
+    "label": "経済"
+  }
+]

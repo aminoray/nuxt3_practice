@@ -1,0 +1,43 @@
+.auth-container {
+  display: flex;
+  justify-content: space-between;
+
+  > .state-check {
+    width: 600px;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 20px;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  > .state-check > .table {
+    margin: 20px auto;
+    width: 100%;
+    border: 1px solid $light-gray;
+
+    tr {
+      width: 100%;
+      border-bottom: 1px solid $light-gray;
+      text-align: left;
+      padding: 20px;
+      font-size: 1.2rem;
+    }
+
+    tr > th {
+      border-bottom: 2px solid $light-gray;
+    }
+
+    > tr > .item {
+      width: 180px;
+      border-right: 1px solid $light-gray;
+      padding: 5px 10px;
+    }
+
+    > tr > .input {
+      width: auto;
+      border-right: 1px solid $light-gray;
+      padding: 5px 10px;
+    }
+  }
+}

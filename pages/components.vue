@@ -33,7 +33,7 @@ const openLoading = (flag: boolean) => {
     <StandardButton
       type="button"
       :disabled="false"
-      width="gray"
+      width="hug"
       color="main-color"
       class="margin-10"
       @handler-click="openLoading(true)"
@@ -44,7 +44,7 @@ const openLoading = (flag: boolean) => {
     <StandardButton
       type="button"
       :disabled="false"
-      width="gray"
+      width="hug"
       color="main-color"
       class="margin-10"
       @handler-click="openLoading(false)"
@@ -61,9 +61,10 @@ const openLoading = (flag: boolean) => {
           color="sub-color"
         />
         <AppInput
+          input-name="email"
+          :set-value="''"
           label="ラベル"
           type="email"
-          set-value=""
           rules="required|email"
           placeholder="placeholder"
           size="half"
@@ -73,6 +74,8 @@ const openLoading = (flag: boolean) => {
         />
 
         <AppTextarea
+          :set-value="''"
+          input-name="textarea"
           label="テキストエリア"
           placeholder="placeholder"
           size="half"
@@ -83,6 +86,7 @@ const openLoading = (flag: boolean) => {
         />
 
         <AppSelect
+          input-name="select"
           label="セレクトボックス"
           size="third"
           :required="true"
@@ -92,9 +96,10 @@ const openLoading = (flag: boolean) => {
         />
 
         <AppInput
+          :set-value="''"
+          input-name="calendar"
           label="カレンダー"
           type="date"
-          set-value=""
           rules="required|email"
           placeholder="placeholder"
           size="half"
@@ -104,9 +109,10 @@ const openLoading = (flag: boolean) => {
         />
 
         <AppInput
+          :set-value="''"
+          input-name="time"
           label="時間選択"
           type="time"
-          set-value=""
           rules="required|email"
           placeholder="placeholder"
           size="quarter"
@@ -115,11 +121,19 @@ const openLoading = (flag: boolean) => {
           class="margin-bottom-20"
         />
 
-        <AppSwitch label="スイッチ" required="true" class="margin-bottom-20" />
+        <AppSwitch
+          input-name="switch"
+          label="スイッチ"
+          :required="true"
+          publish-setting="public"
+          class="margin-bottom-20"
+        />
 
         <AppRadio
+          input-name="radio"
           label="ラジオボタン"
-          required="true"
+          :required="true"
+          publish-setting="public"
           class="margin-bottom-20"
         />
       </section>

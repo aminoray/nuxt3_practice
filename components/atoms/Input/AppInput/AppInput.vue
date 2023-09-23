@@ -20,7 +20,7 @@ type Props = {
   size?: 'full' | 'half' | 'quarter' | 'third';
   required?: boolean;
   disabled?: boolean;
-  publishSetting: 'public' | 'private' | null;
+  publishSetting: 'public' | 'private' | undefined;
   rules: string | null;
 };
 const props = withDefaults(defineProps<Props>(), {
@@ -28,12 +28,12 @@ const props = withDefaults(defineProps<Props>(), {
   inputName: '',
   setValue: '',
   label: '',
-  rules: null,
+  rules: '',
   placeholder: '',
   size: 'full',
   required: false,
   disabled: false,
-  publishSetting: null,
+  publishSetting: undefined,
 });
 const emits = defineEmits(['update']);
 const inputValue = ref<string | number>(props.setValue);
@@ -61,7 +61,7 @@ const inputFunc = (e: Event) => {
     <Field
       v-slot="{ handleChange, errorMessage }"
       :name="inputName"
-      :rules="rules"
+      :rules="rules!"
       class="field"
       as="div"
       validate-on-input

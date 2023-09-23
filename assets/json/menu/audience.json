@@ -1,0 +1,44 @@
+[
+  {
+    "text": "ホーム",
+    "icon": "icons/sideber-audience/home.svg",
+    "color": "main-color",
+    "url": "/home"
+  },
+  {
+    "text": "ライブ配信視聴",
+    "icon": "icons/sideber-audience/play.svg",
+    "color": "main-color",
+    "url": "/live"
+  },
+  {
+    "text": "アーカイブ視聴",
+    "icon": "icons/sideber-audience/film.svg",
+    "color": "main-color",
+    "url": "/archive"
+  },
+  {
+    "text": "配信スケジュール",
+    "icon": "icons/sideber-audience/calendar.svg",
+    "color": "main-color",
+    "url": "/schedule"
+  },
+  {
+    "text": "掲示板",
+    "icon": "icons/sideber-audience/chalkboard.svg",
+    "color": "main-color",
+    "url": "/threads"
+  },
+  {
+    "text": "お問い合せ",
+    "icon": "icons/sideber-audience/question.svg",
+    "color": "main-color",
+    "url": "/contact"
+  },
+  {
+    "text": "配信画面へ",
+    "icon": "icons/sideber-audience/video.svg",
+    "color": "main-color",
+    "url": "/streamer"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "text": "ダッシュボード",
+    "icon": "icons/sideber-streamer/chart.svg",
+    "color": "sub-color",
+    "url": "/streamer"
+  },
+  {
+    "text": "アーカイブ管理",
+    "icon": "icons/sideber-streamer/archive.svg",
+    "color": "sub-color",
+    "url": "/streamer/archive"
+  },
+  {
+    "text": "ライブ配信予定管理",
+    "icon": "icons/sideber-streamer/video.svg",
+    "color": "sub-color",
+    "url": "/streamer/schedule/management"
+  },
+  {
+    "text": "配信スケジュール",
+    "icon": "icons/sideber-streamer/calendar.svg",
+    "color": "sub-color",
+    "url": "/streamer/schedule"
+  },
+  {
+    "text": "お問い合わせ",
+    "icon": "icons/sideber-streamer/question.svg",
+    "color": "sub-color",
+    "url": "/streamer/contact"
+  },
+  {
+    "text": "チャンネル情報編集",
+    "icon": "icons/sideber-streamer/gear.svg",
+    "color": "sub-color",
+    "url": "/streamer/settings"
+  },
+  {
+    "text": "視聴者画面ホームへ",
+    "icon": "icons/sideber-streamer/home.svg",
+    "color": "sub-color",
+    "url": "/home"
+  }
+]

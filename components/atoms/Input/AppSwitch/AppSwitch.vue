@@ -2,6 +2,7 @@
 import '~/components/atoms/Input/AppSwitch/app-switch.scss';
 
 type Props = {
+  inputName: string;
   setValue: boolean;
   disabled?: boolean;
   label: string | null;
@@ -9,6 +10,7 @@ type Props = {
   publishSetting: 'public' | 'private' | null;
 };
 const props = withDefaults(defineProps<Props>(), {
+  inputName: '',
   setValue: false,
   disabled: false,
   label: null,
@@ -24,7 +26,7 @@ const inputFunc = (e: Event) => {
   if (!(e.target instanceof HTMLInputElement)) {
     return;
   }
-  inputValue.value = e.target.value;
+  inputValue.value = e.target.checked;
   emits('update', inputValue.value);
 };
 </script>
@@ -40,7 +42,12 @@ const inputFunc = (e: Event) => {
     </div>
     <div class="field">
       <label class="switch">
-        <input v-model="inputValue" class="input-hidden" type="checkbox" />
+        <input
+          v-model="inputValue"
+          class="input-hidden"
+          type="checkbox"
+          @input="inputFunc"
+        />
       </label>
       <p class="text">{{ inputValue ? 'ON' : 'OFF' }}</p>
     </div>

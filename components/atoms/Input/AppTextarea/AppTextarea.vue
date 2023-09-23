@@ -52,7 +52,7 @@ const inputFunc = (e: Event) => {
     <Field
       v-slot="{ handleChange, errorMessage }"
       :name="inputName"
-      :rules="rules"
+      :rules="rules ? rules : ''"
       class="field"
       as="div"
       validate-on-input

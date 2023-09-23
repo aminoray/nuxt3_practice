@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
+  padding-bottom: 10px;
   &.full {
     width: 100%;
   }
@@ -72,7 +74,8 @@
   }
 
   > .error {
-    margin: 6px 0;
+    position: absolute;
+    bottom: -14px;
     font-size: 1.2rem;
     color: $red;
     word-break: break-all;

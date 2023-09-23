@@ -16,12 +16,18 @@ const emits = defineEmits(['switch']);
 
 const menuList = [
   {
-    "text": "コンポーネント一覧",
-    "icon": "icons/home.svg",
-    "color": "black",
-    "url": "/components"
-  }
-]
+    text: 'コンポーネント一覧',
+    icon: 'icons/home.svg',
+    color: 'black',
+    url: '/components',
+  },
+  {
+    text: '情報入力画面サンプル',
+    icon: 'icons/home.svg',
+    color: 'black',
+    url: '/input',
+  },
+];
 </script>
 <template>
   <div class="common-menu" :class="{ active: isVisible }">
