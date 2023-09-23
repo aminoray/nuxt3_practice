@@ -3,7 +3,7 @@
   > .top-content {
     background-image: url('@/assets/images/background-images/bg-002.png');
     background-size: 100% auto;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     min-height: 100vh;
     padding-top: 90px;
@@ -32,7 +32,6 @@
 
   > .content {
     padding: 50px;
-    // background-image: url('@/assets/images/background-images/Illusion-002.png');
   }
 
   > .content > .title-gradation {
@@ -42,13 +41,20 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .section {
+  > .content > .sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  > .content > .sections > .section {
     padding: 20px;
-    width: calc(50% - 50px);
+    width: calc(50% - 20px);
     border-radius: 10px;
     background-color: $white;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
-    background-image: url('@/assets/images/background-images/Illusion-002.png');
+    position: relative;
+    min-height: 300px;
 
     .ul {
       margin: 10px 0;
@@ -60,20 +66,11 @@
         color: $black;
       }
     }
-  }
-  .m-b-10 {
-    margin-bottom: 10px;
-  }
 
-  .m-b-20 {
-    margin-bottom: 20px;
-  }
-
-  .m-10 {
-    margin: 10px;
-  }
-
-  .m-20 {
-    margin: 20px;
+    .people {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
   }
 }

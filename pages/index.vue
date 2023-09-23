@@ -21,42 +21,87 @@ import AppLink from '~/components/atoms/Link/AppLink/AppLink.vue';
     <div class="content">
       <TitleText
         text="Nuxt3の学習サイトです。"
-        class="m-b-20 title-gradation"
+        class="margin-bottom-20 title-gradation"
       />
       <DescriptionText
         text="フロントのフレームワークである、nuxt3を体系的に学習できるサイトとなっています。"
         size="medium"
         color="black"
-        class="m-b-20"
+        class="margin-bottom-20"
       />
 
-      <section class="section">
-        <SubTitleText
-          text="押さえておきたい用語"
-          size="medium"
-          color="sub-color"
-          class="m-b-10"
-        />
-        <AppLink
-          href="https://qiita.com/citrus_candy/items/74d602f672ccfc93490e"
-          target="_blank"
-        >
-          <p class="link">Atomicデザインとは？？</p>
-        </AppLink>
-        <ul class="ul">
-          <li class="li">atomicデザイン</li>
-          <li class="li">デザインシステム</li>
-          <li class="li">コンポーネント（components）</li>
-          <li class="li">準備中...</li>
-          <li class="li">準備中...</li>
-          <li class="li">準備中...</li>
-          <li class="li">準備中...</li>
-          <li class="li">準備中...</li>
-          <li class="li">準備中...</li>
-          <li class="li">準備中...</li>
-          <li class="li">準備中...</li>
-        </ul>
-      </section>
+      <div class="sections">
+        <section class="section">
+          <SubTitleText
+            text="押さえておきたい用語"
+            size="medium"
+            color="sub-color"
+            class="margin-bottom-10"
+          />
+          <AppLink
+            href="https://qiita.com/citrus_candy/items/74d602f672ccfc93490e"
+            target="_blank"
+          >
+            <p class="link">Atomicデザインとは？？</p>
+          </AppLink>
+          <ul class="ul">
+            <li class="li">atomicデザイン</li>
+            <li class="li">デザインシステム</li>
+            <li class="li">コンポーネント（components）</li>
+            <li class="li">準備中...</li>
+            <li class="li">準備中...</li>
+          </ul>
+          <img
+            class="people"
+            src="~/assets/images/people/p_1.svg"
+            alt="people"
+          />
+        </section>
+
+        <section class="section">
+          <SubTitleText
+            text="みんなで情報を共有しよう！"
+            size="medium"
+            color="sub-color"
+            class="margin-bottom-10"
+          />
+          <img
+            class="people"
+            src="~/assets/images/people/p_3.svg"
+            alt="people"
+          />
+        </section>
+      </div>
+
+      <div class="sections">
+        <section class="section">
+          <SubTitleText
+            text="みんなで情報を共有しよう！"
+            size="medium"
+            color="sub-color"
+            class="margin-bottom-10"
+          />
+          <img
+            class="people"
+            src="~/assets/images/people/p_4.svg"
+            alt="people"
+          />
+        </section>
+
+        <section class="section">
+          <SubTitleText
+            text="みんなで情報を共有しよう！"
+            size="medium"
+            color="sub-color"
+            class="margin-bottom-10"
+          />
+          <img
+            class="people"
+            src="~/assets/images/people/p_5.svg"
+            alt="people"
+          />
+        </section>
+      </div>
     </div>
   </div>
 </template>
