@@ -1,0 +1,33 @@
+.lottie-card {
+  & {
+    font-size: 14px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $white;
+  }
+  > .image {
+    height: 200px;
+    background-color: $light-gray;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  > .content {
+    padding: 16px;
+  }
+  > .content > .title {
+    font-weight: 700;
+  }
+  > .content > .info {
+    display: flex;
+  }
+  > .content > .info > .text {
+    font-weight: 700;
+  }
+  > .content > .info > .data {
+    color: $gray;
+  }
+}
